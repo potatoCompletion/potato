@@ -1,0 +1,26 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int i = sc.nextInt();
+		int result = 0;
+		
+		while(i != 1)
+		{
+			if (i % 2 == 0)
+				i = i / 2;
+			else 
+				i = i * 3 + 1;
+			result++;
+			
+			if (result == 500)
+				break;
+		}
+		if (result >= 500)
+			System.out.println(-1);
+		else
+			System.out.println(result);
+	}
+}
